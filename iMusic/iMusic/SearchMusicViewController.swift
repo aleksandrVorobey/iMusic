@@ -6,15 +6,16 @@
 //
 
 import UIKit
+import Alamofire
 
-class SearchViewController: UITableViewController {
+class SearchMusicViewController: UITableViewController {
+    
+    private var timer: Timer?
+    var networkService = NetworkService()
     
     let searchController = UISearchController(searchResultsController: nil)
     
-    let tracks = [
-    TrackModel(trackName: "AWER", artistName: "sdt"),
-    TrackModel(trackName: "CVFR", artistName: "vlop")
-    ]
+    var tracks = [Track]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,6 @@ class SearchViewController: UITableViewController {
         setupSearchBar()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-//        tableView.delegate = self
-//        tableView.dataSource = self
     }
     
     private func setupSearchBar() {
@@ -47,8 +46,17 @@ class SearchViewController: UITableViewController {
     
 }
 
-extension SearchViewController: UISearchBarDelegate {
+extension SearchMusicViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
+        
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { _ in
+            self.networkService.fetshTracks(searchText: searchText) { [weak self] searchResults in
+                self?.tracks = searchResults?.results ?? []
+                self?.tableView.reloadData()
+            }
+        })
+        
     }
 }
