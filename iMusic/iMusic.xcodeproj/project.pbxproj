@@ -27,6 +27,8 @@
 		848DD536286E2BFD00161987 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD52F286E2BFD00161987 /* SearchInteractor.swift */; };
 		848DD539286E2D1F00161987 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848DD538286E2D1F00161987 /* SearchViewController.storyboard */; };
 		848DD53B286E30D500161987 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD53A286E30D500161987 /* UIViewController + Storyboard.swift */; };
+		848DD53F286F085F00161987 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DD53E286F085F00161987 /* TrackCell.xib */; };
+		848DD541286F08C100161987 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD540286F08C100161987 /* TrackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		848DD52F286E2BFD00161987 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		848DD538286E2D1F00161987 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		848DD53A286E30D500161987 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
+		848DD53E286F085F00161987 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
+		848DD540286F08C100161987 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		F181EC3707C00D3128E3A631 /* Pods-iMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.debug.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +110,6 @@
 				848DD53C286E30E500161987 /* Helpers */,
 				845C7649286DCFA700316222 /* ViewController.swift */,
 				845C765B286DD1FB00316222 /* SearchMusicViewController.swift */,
-				845C765F286DF28F00316222 /* SearchResponse.swift */,
 				845C765D286DE25700316222 /* TrackModel.swift */,
 				845C764B286DCFA700316222 /* Main.storyboard */,
 				845C764E286DCFAA00316222 /* Assets.xcassets */,
@@ -119,6 +122,7 @@
 		848DD51A286E2AD800161987 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				848DD53D286F00CD00161987 /* Cell */,
 				848DD538286E2D1F00161987 /* SearchViewController.storyboard */,
 				848DD52E286E2BFD00161987 /* SearchViewController.swift */,
 				848DD52F286E2BFD00161987 /* SearchInteractor.swift */,
@@ -133,6 +137,7 @@
 		848DD529286E2B5400161987 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				848DD542286F107400161987 /* Models */,
 				845C7661286E241D00316222 /* NetworkService.swift */,
 			);
 			path = Services;
@@ -144,6 +149,23 @@
 				848DD53A286E30D500161987 /* UIViewController + Storyboard.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		848DD53D286F00CD00161987 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				848DD53E286F085F00161987 /* TrackCell.xib */,
+				848DD540286F08C100161987 /* TrackCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		848DD542286F107400161987 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				845C765F286DF28F00316222 /* SearchResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A866D5186EA2618334EB8C27 /* Frameworks */ = {
@@ -215,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845C7652286DCFAA00316222 /* LaunchScreen.storyboard in Resources */,
+				848DD53F286F085F00161987 /* TrackCell.xib in Resources */,
 				845C764F286DCFAA00316222 /* Assets.xcassets in Resources */,
 				848DD539286E2D1F00161987 /* SearchViewController.storyboard in Resources */,
 				845C764D286DCFA700316222 /* Main.storyboard in Resources */,
@@ -285,6 +308,7 @@
 				845C765A286DD04800316222 /* MainTabBarController.swift in Sources */,
 				845C7648286DCFA700316222 /* SceneDelegate.swift in Sources */,
 				848DD534286E2BFD00161987 /* SearchModels.swift in Sources */,
+				848DD541286F08C100161987 /* TrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

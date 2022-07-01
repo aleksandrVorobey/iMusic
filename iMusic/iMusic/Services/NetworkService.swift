@@ -11,7 +11,7 @@ import Alamofire
 class NetworkService {
     func fetshTracks(searchText: String, completion: @escaping (SearchResponse?) -> ()) {
         let url = "https://itunes.apple.com/search"
-        let parameters = ["term": "\(searchText)", "limit": "10", "media": "music"]
+        let parameters = ["term": "\(searchText)", "limit": "20", "media": "music"]
         
         AF.request(url, method: .get, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default).responseData { dataResponse in
             if let error = dataResponse.error {
