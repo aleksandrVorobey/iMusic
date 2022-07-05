@@ -18,8 +18,6 @@ class SearchPresenter: SearchPresentationLogic {
     func presentData(response: Search.Model.Response.ResponseType) {
         
         switch response {
-        case .some:
-            print("presenter some")
         case .presentTracks(let searchResult):
             print("presenter tracks")
             let cells = searchResult?.results.map({ track in
@@ -27,6 +25,8 @@ class SearchPresenter: SearchPresentationLogic {
             }) ?? []
             let searchViewModel = SearchViewModel.init(cells: cells)
             viewController?.displayData(viewModel: Search.Model.ViewModel.ViewModelData.displayTracks(searchViewModel: searchViewModel))
+        case .presentFooterView:
+            viewController?.displayData(viewModel: Search.Model.ViewModel.ViewModelData.displayFooterView)
         }
     }
     

@@ -23,6 +23,8 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
     
     private var searchViewModel = SearchViewModel.init(cells: [])
     private var timer: Timer?
+    
+    private lazy var footerView = FooterView()
   
   // MARK: Setup
   
@@ -60,17 +62,19 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
     
     private func setupTableView() {
         table.register(UINib(nibName: TrackCell.reuseId, bundle: nil), forCellReuseIdentifier: TrackCell.reuseId)
+        table.tableFooterView = footerView
     }
 
   
   func displayData(viewModel: Search.Model.ViewModel.ViewModelData) {
       switch viewModel {
-      case .some:
-          print("ViewController some")
       case .displayTracks(let searchViewModel):
           print("ViewController displayTracks")
           self.searchViewModel = searchViewModel
           table.reloadData()
+          footerView.hideLoader()
+      case .displayFooterView:
+          footerView.showLoader()
       }
   }
   
@@ -92,9 +96,30 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 84
     }
+    //!!!!!!!
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellViewModel = searchViewModel.cells[indexPath.row]
+        
+        let window = UIApplication.shared.keyWindow
+        //let window = UIApplication.shared.windows.first
+        let trackDetailView = Bundle.main.loadNibNamed("TrackDetailView", owner: self)?.first as! TrackDetailView
+        window?.addSubview(trackDetailView)
+    }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.text = "Please enter search term above ..."
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        return label
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return searchViewModel.cells.count > 0 ? 0 : 300
+    }
 }
 
+//MARK: - UISearchBarDelegate
 extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)

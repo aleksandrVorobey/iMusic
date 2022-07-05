@@ -29,6 +29,9 @@
 		848DD53B286E30D500161987 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD53A286E30D500161987 /* UIViewController + Storyboard.swift */; };
 		848DD53F286F085F00161987 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DD53E286F085F00161987 /* TrackCell.xib */; };
 		848DD541286F08C100161987 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD540286F08C100161987 /* TrackCell.swift */; };
+		848DD545286F2F6300161987 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD544286F2F6300161987 /* FooterView.swift */; };
+		848DD548286F3FDB00161987 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD547286F3FDB00161987 /* TrackDetailView.swift */; };
+		848DD54A286F3FFE00161987 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DD549286F3FFE00161987 /* TrackDetailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		848DD53A286E30D500161987 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		848DD53E286F085F00161987 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
 		848DD540286F08C100161987 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		848DD544286F2F6300161987 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		848DD547286F3FDB00161987 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
+		848DD549286F3FFE00161987 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
 		F181EC3707C00D3128E3A631 /* Pods-iMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.debug.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +128,8 @@
 		848DD51A286E2AD800161987 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				848DD546286F3FB100161987 /* TrackDetailView */,
+				848DD543286F2F4E00161987 /* Footer View */,
 				848DD53D286F00CD00161987 /* Cell */,
 				848DD538286E2D1F00161987 /* SearchViewController.storyboard */,
 				848DD52E286E2BFD00161987 /* SearchViewController.swift */,
@@ -166,6 +174,23 @@
 				845C765F286DF28F00316222 /* SearchResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		848DD543286F2F4E00161987 /* Footer View */ = {
+			isa = PBXGroup;
+			children = (
+				848DD544286F2F6300161987 /* FooterView.swift */,
+			);
+			path = "Footer View";
+			sourceTree = "<group>";
+		};
+		848DD546286F3FB100161987 /* TrackDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				848DD547286F3FDB00161987 /* TrackDetailView.swift */,
+				848DD549286F3FFE00161987 /* TrackDetailView.xib */,
+			);
+			path = TrackDetailView;
 			sourceTree = "<group>";
 		};
 		A866D5186EA2618334EB8C27 /* Frameworks */ = {
@@ -237,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845C7652286DCFAA00316222 /* LaunchScreen.storyboard in Resources */,
+				848DD54A286F3FFE00161987 /* TrackDetailView.xib in Resources */,
 				848DD53F286F085F00161987 /* TrackCell.xib in Resources */,
 				845C764F286DCFAA00316222 /* Assets.xcassets in Resources */,
 				848DD539286E2D1F00161987 /* SearchViewController.storyboard in Resources */,
@@ -302,6 +328,7 @@
 				848DD53B286E30D500161987 /* UIViewController + Storyboard.swift in Sources */,
 				848DD536286E2BFD00161987 /* SearchInteractor.swift in Sources */,
 				845C765E286DE25800316222 /* TrackModel.swift in Sources */,
+				848DD548286F3FDB00161987 /* TrackDetailView.swift in Sources */,
 				845C7646286DCFA700316222 /* AppDelegate.swift in Sources */,
 				848DD535286E2BFD00161987 /* SearchViewController.swift in Sources */,
 				845C765C286DD1FC00316222 /* SearchMusicViewController.swift in Sources */,
@@ -309,6 +336,7 @@
 				845C7648286DCFA700316222 /* SceneDelegate.swift in Sources */,
 				848DD534286E2BFD00161987 /* SearchModels.swift in Sources */,
 				848DD541286F08C100161987 /* TrackCell.swift in Sources */,
+				848DD545286F2F6300161987 /* FooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
