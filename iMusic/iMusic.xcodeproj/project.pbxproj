@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C4B522875FB7FA5A405A04E /* Pods_iMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113794DD3B480C46822FAE15 /* Pods_iMusic.framework */; };
+		841C08F628759A6B00D2726E /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C08F528759A6B00D2726E /* CMTime + Extension.swift */; };
+		841C08F82876FE4D00D2726E /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C08F72876FE4D00D2726E /* Nib.swift */; };
 		845C7646286DCFA700316222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7645286DCFA700316222 /* AppDelegate.swift */; };
 		845C7648286DCFA700316222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7647286DCFA700316222 /* SceneDelegate.swift */; };
 		845C764A286DCFA700316222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7649286DCFA700316222 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		113794DD3B480C46822FAE15 /* Pods_iMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F069BCDD549558C285594F7 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
+		841C08F528759A6B00D2726E /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
+		841C08F72876FE4D00D2726E /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		845C7642286DCFA700316222 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845C7645286DCFA700316222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845C7647286DCFA700316222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				848DD53A286E30D500161987 /* UIViewController + Storyboard.swift */,
+				841C08F528759A6B00D2726E /* CMTime + Extension.swift */,
+				841C08F72876FE4D00D2726E /* Nib.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845C7660286DF28F00316222 /* SearchResponse.swift in Sources */,
+				841C08F82876FE4D00D2726E /* Nib.swift in Sources */,
 				848DD532286E2BFD00161987 /* SearchWorker.swift in Sources */,
 				848DD533286E2BFD00161987 /* SearchRouter.swift in Sources */,
 				845C764A286DCFA700316222 /* ViewController.swift in Sources */,
@@ -327,6 +334,7 @@
 				845C7662286E241D00316222 /* NetworkService.swift in Sources */,
 				848DD53B286E30D500161987 /* UIViewController + Storyboard.swift in Sources */,
 				848DD536286E2BFD00161987 /* SearchInteractor.swift in Sources */,
+				841C08F628759A6B00D2726E /* CMTime + Extension.swift in Sources */,
 				845C765E286DE25800316222 /* TrackModel.swift in Sources */,
 				848DD548286F3FDB00161987 /* TrackDetailView.swift in Sources */,
 				845C7646286DCFA700316222 /* AppDelegate.swift in Sources */,
@@ -490,6 +498,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -519,6 +528,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
