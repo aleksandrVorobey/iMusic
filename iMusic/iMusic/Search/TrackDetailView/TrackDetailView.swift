@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 import AVKit
 
-protocol TrackMovingDelegate: AnyObject {
+protocol TrackMovingDelegate {
     func moveBackForPreviousTrack() -> SearchViewModel.Cell?
     func moveForwardForPreviousTrack() -> SearchViewModel.Cell?
 }
@@ -39,7 +39,7 @@ class TrackDetailView: UIView {
         return avPlayer
     }()
     
-    weak var delegate: TrackMovingDelegate?
+    var delegate: TrackMovingDelegate?
     weak var tabBarDelegate: MainTabBarControllerDelegate?
     
     override class func awakeFromNib() {
@@ -69,13 +69,13 @@ class TrackDetailView: UIView {
         trackImageView.sd_setImage(with: url)
     }
     
+    //MARK: - Gestures
     private func setupGestures() {
         miniTrackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapMaximaze)))
         miniTrackView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
         addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handleDismissalPan)))
     }
-
-    //MARK: - Gestures
+    
     @objc private func handleTapMaximaze() {
         tabBarDelegate?.maximizeTrackDetailController(viewModel: nil)
     }
@@ -132,14 +132,6 @@ class TrackDetailView: UIView {
             }
         }, completion: nil)
     }
-    
-    
-    
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        self.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-//        settingsImagePlayer()
-//    }
     
     private func playTrack(previewUrl: String?) {
         guard let url = URL(string: previewUrl ?? "") else { return }
@@ -205,7 +197,6 @@ class TrackDetailView: UIView {
     
     @IBAction func dragDownButtonTapped(_ sender: Any) {
         self.tabBarDelegate?.minimizeTrackDetailController()
-        //self.removeFromSuperview()
     }
     
     @IBAction func previousTrack(_ sender: Any) {

@@ -10,16 +10,17 @@
 		5C4B522875FB7FA5A405A04E /* Pods_iMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113794DD3B480C46822FAE15 /* Pods_iMusic.framework */; };
 		841C08F628759A6B00D2726E /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C08F528759A6B00D2726E /* CMTime + Extension.swift */; };
 		841C08F82876FE4D00D2726E /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C08F72876FE4D00D2726E /* Nib.swift */; };
+		841C08FA287793D300D2726E /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C08F9287793D200D2726E /* Library.swift */; };
+		841C08FC287851CD00D2726E /* UserDefaults + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C08FB287851CD00D2726E /* UserDefaults + Extension.swift */; };
+		841C08FF28785ADC00D2726E /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 841C08FE28785ADC00D2726E /* URLImage */; };
+		841C090128785ADC00D2726E /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 841C090028785ADC00D2726E /* URLImageStore */; };
+		841C0904287883D800D2726E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C0903287883D800D2726E /* SearchResponse.swift */; };
+		841C09062878867100D2726E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841C09052878867000D2726E /* Main.storyboard */; };
 		845C7646286DCFA700316222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7645286DCFA700316222 /* AppDelegate.swift */; };
 		845C7648286DCFA700316222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7647286DCFA700316222 /* SceneDelegate.swift */; };
-		845C764A286DCFA700316222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7649286DCFA700316222 /* ViewController.swift */; };
-		845C764D286DCFA700316222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845C764B286DCFA700316222 /* Main.storyboard */; };
 		845C764F286DCFAA00316222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845C764E286DCFAA00316222 /* Assets.xcassets */; };
 		845C7652286DCFAA00316222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845C7650286DCFAA00316222 /* LaunchScreen.storyboard */; };
 		845C765A286DD04800316222 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7659286DD04800316222 /* MainTabBarController.swift */; };
-		845C765C286DD1FC00316222 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C765B286DD1FB00316222 /* SearchMusicViewController.swift */; };
-		845C765E286DE25800316222 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C765D286DE25700316222 /* TrackModel.swift */; };
-		845C7660286DF28F00316222 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C765F286DF28F00316222 /* SearchResponse.swift */; };
 		845C7662286E241D00316222 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C7661286E241D00316222 /* NetworkService.swift */; };
 		848DD531286E2BFD00161987 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD52A286E2BFD00161987 /* SearchPresenter.swift */; };
 		848DD532286E2BFD00161987 /* SearchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DD52B286E2BFD00161987 /* SearchWorker.swift */; };
@@ -41,18 +42,17 @@
 		3F069BCDD549558C285594F7 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
 		841C08F528759A6B00D2726E /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
 		841C08F72876FE4D00D2726E /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
+		841C08F9287793D200D2726E /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		841C08FB287851CD00D2726E /* UserDefaults + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Extension.swift"; sourceTree = "<group>"; };
+		841C0903287883D800D2726E /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		841C09052878867000D2726E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		845C7642286DCFA700316222 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845C7645286DCFA700316222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845C7647286DCFA700316222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		845C7649286DCFA700316222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		845C764C286DCFA700316222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845C764E286DCFAA00316222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845C7651286DCFAA00316222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845C7653286DCFAA00316222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845C7659286DD04800316222 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		845C765B286DD1FB00316222 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
-		845C765D286DE25700316222 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
-		845C765F286DF28F00316222 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		845C7661286E241D00316222 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		848DD52A286E2BFD00161987 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		848DD52B286E2BFD00161987 /* SearchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorker.swift; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841C08FF28785ADC00D2726E /* URLImage in Frameworks */,
+				841C090128785ADC00D2726E /* URLImageStore in Frameworks */,
 				5C4B522875FB7FA5A405A04E /* Pods_iMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +91,14 @@
 				3F069BCDD549558C285594F7 /* Pods-iMusic.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		841C0902287883BD00D2726E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				841C0903287883D800D2726E /* SearchResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		845C7639286DCFA700316222 = {
@@ -115,15 +125,13 @@
 				845C7645286DCFA700316222 /* AppDelegate.swift */,
 				845C7647286DCFA700316222 /* SceneDelegate.swift */,
 				845C7659286DD04800316222 /* MainTabBarController.swift */,
+				841C08F9287793D200D2726E /* Library.swift */,
 				848DD529286E2B5400161987 /* Services */,
 				848DD51A286E2AD800161987 /* Search */,
 				848DD53C286E30E500161987 /* Helpers */,
-				845C7649286DCFA700316222 /* ViewController.swift */,
-				845C765B286DD1FB00316222 /* SearchMusicViewController.swift */,
-				845C765D286DE25700316222 /* TrackModel.swift */,
-				845C764B286DCFA700316222 /* Main.storyboard */,
-				845C764E286DCFAA00316222 /* Assets.xcassets */,
+				841C09052878867000D2726E /* Main.storyboard */,
 				845C7650286DCFAA00316222 /* LaunchScreen.storyboard */,
+				845C764E286DCFAA00316222 /* Assets.xcassets */,
 				845C7653286DCFAA00316222 /* Info.plist */,
 			);
 			path = iMusic;
@@ -149,7 +157,7 @@
 		848DD529286E2B5400161987 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				848DD542286F107400161987 /* Models */,
+				841C0902287883BD00D2726E /* Models */,
 				845C7661286E241D00316222 /* NetworkService.swift */,
 			);
 			path = Services;
@@ -158,6 +166,7 @@
 		848DD53C286E30E500161987 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				841C08FB287851CD00D2726E /* UserDefaults + Extension.swift */,
 				848DD53A286E30D500161987 /* UIViewController + Storyboard.swift */,
 				841C08F528759A6B00D2726E /* CMTime + Extension.swift */,
 				841C08F72876FE4D00D2726E /* Nib.swift */,
@@ -172,14 +181,6 @@
 				848DD540286F08C100161987 /* TrackCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		848DD542286F107400161987 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				845C765F286DF28F00316222 /* SearchResponse.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		848DD543286F2F4E00161987 /* Footer View */ = {
@@ -225,6 +226,10 @@
 			dependencies = (
 			);
 			name = iMusic;
+			packageProductDependencies = (
+				841C08FE28785ADC00D2726E /* URLImage */,
+				841C090028785ADC00D2726E /* URLImageStore */,
+			);
 			productName = iMusic;
 			productReference = 845C7642286DCFA700316222 /* iMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 845C7639286DCFA700316222;
+			packageReferences = (
+				841C08FD28785ADC00D2726E /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 845C7643286DCFA700316222 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,9 +278,9 @@
 				845C7652286DCFAA00316222 /* LaunchScreen.storyboard in Resources */,
 				848DD54A286F3FFE00161987 /* TrackDetailView.xib in Resources */,
 				848DD53F286F085F00161987 /* TrackCell.xib in Resources */,
+				841C09062878867100D2726E /* Main.storyboard in Resources */,
 				845C764F286DCFAA00316222 /* Assets.xcassets in Resources */,
 				848DD539286E2D1F00161987 /* SearchViewController.storyboard in Resources */,
-				845C764D286DCFA700316222 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,21 +333,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845C7660286DF28F00316222 /* SearchResponse.swift in Sources */,
 				841C08F82876FE4D00D2726E /* Nib.swift in Sources */,
 				848DD532286E2BFD00161987 /* SearchWorker.swift in Sources */,
 				848DD533286E2BFD00161987 /* SearchRouter.swift in Sources */,
-				845C764A286DCFA700316222 /* ViewController.swift in Sources */,
 				848DD531286E2BFD00161987 /* SearchPresenter.swift in Sources */,
+				841C08FC287851CD00D2726E /* UserDefaults + Extension.swift in Sources */,
+				841C0904287883D800D2726E /* SearchResponse.swift in Sources */,
 				845C7662286E241D00316222 /* NetworkService.swift in Sources */,
 				848DD53B286E30D500161987 /* UIViewController + Storyboard.swift in Sources */,
+				841C08FA287793D300D2726E /* Library.swift in Sources */,
 				848DD536286E2BFD00161987 /* SearchInteractor.swift in Sources */,
 				841C08F628759A6B00D2726E /* CMTime + Extension.swift in Sources */,
-				845C765E286DE25800316222 /* TrackModel.swift in Sources */,
 				848DD548286F3FDB00161987 /* TrackDetailView.swift in Sources */,
 				845C7646286DCFA700316222 /* AppDelegate.swift in Sources */,
 				848DD535286E2BFD00161987 /* SearchViewController.swift in Sources */,
-				845C765C286DD1FC00316222 /* SearchMusicViewController.swift in Sources */,
 				845C765A286DD04800316222 /* MainTabBarController.swift in Sources */,
 				845C7648286DCFA700316222 /* SceneDelegate.swift in Sources */,
 				848DD534286E2BFD00161987 /* SearchModels.swift in Sources */,
@@ -351,14 +358,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		845C764B286DCFA700316222 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				845C764C286DCFA700316222 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		845C7650286DCFAA00316222 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -566,6 +565,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		841C08FD28785ADC00D2726E /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		841C08FE28785ADC00D2726E /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 841C08FD28785ADC00D2726E /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		841C090028785ADC00D2726E /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 841C08FD28785ADC00D2726E /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 845C763A286DCFA700316222 /* Project object */;
 }

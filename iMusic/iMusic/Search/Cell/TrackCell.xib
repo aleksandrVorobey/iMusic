@@ -41,15 +41,29 @@
                         <color key="textColor" red="0.49838226009999997" green="0.49838226009999997" blue="0.49838226009999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-BN-B1J">
+                        <rect key="frame" x="374" y="34" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <color key="tintColor" red="0.80784313730000001" green="0.28235294119999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Add"/>
+                        <connections>
+                            <action selector="addTrackAction:" destination="wAj-T4-YNX" eventType="touchUpInside" id="M8M-lf-hmT"/>
+                        </connections>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="addTrackButton" destination="pGp-BN-B1J" id="eQU-ug-nb8"/>
                 <outlet property="artistNameLabel" destination="e8I-Pl-HkW" id="yWN-iC-YGJ"/>
                 <outlet property="collectionNameLabel" destination="0ll-eV-8Y3" id="hlP-Rr-Di1"/>
                 <outlet property="trackImageView" destination="dw9-Gk-aps" id="do0-05-cVk"/>
                 <outlet property="trackNameLabel" destination="m3k-Ea-ksS" id="y26-92-Y6E"/>
             </connections>
-            <point key="canvasLocation" x="145" y="60"/>
+            <point key="canvasLocation" x="144.92753623188406" y="59.598214285714285"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Add" width="16" height="16"/>
+    </resources>
 </document>

@@ -53,7 +53,6 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
       
       setupSearchBar()
       setupTableView()
-      searchBar(searchController.searchBar, textDidChange: "ddc")
   }
     
     private func setupSearchBar() {
@@ -66,12 +65,25 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
         table.register(UINib(nibName: TrackCell.reuseId, bundle: nil), forCellReuseIdentifier: TrackCell.reuseId)
         table.tableFooterView = footerView
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let keyWindow = UIApplication.shared.connectedScenes
+        .filter({$0.activationState == .foregroundActive})
+        .map({$0 as? UIWindowScene})
+        .compactMap({$0})
+        .first?.windows
+        .filter({$0.isKeyWindow}).first
+        
+        let tabBarVC = keyWindow?.rootViewController as? MainTabBarController
+        tabBarVC?.trackDetailView.delegate = self
+    }
 
   
   func displayData(viewModel: Search.Model.ViewModel.ViewModelData) {
       switch viewModel {
       case .displayTracks(let searchViewModel):
-          print("ViewController displayTracks")
           self.searchViewModel = searchViewModel
           table.reloadData()
           footerView.hideLoader()
@@ -153,12 +165,10 @@ extension SearchViewController: TrackMovingDelegate {
     }
     
     func moveBackForPreviousTrack() -> SearchViewModel.Cell? {
-        print("Back")
         return getTrack(isForwardTrack: false)
     }
     
     func moveForwardForPreviousTrack() -> SearchViewModel.Cell? {
-        print("Next")
         return getTrack(isForwardTrack: true)
     }
 }
